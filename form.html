@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset style="width: 400px;">
+            <legend style="text-align: center;">FORM</legend>
+        <!-- <label for="name">Name :</label> -->
+        <input type="text" name="NAME" id="name" maxlength="10" placeholder="Enter your name"><br><br>
+
+        <label for="pass">Password :</label>
+        <input type="password" name="PASSWORD" id="pass" required style="width: 300px;" pattern="[A-Za-z0-9]{5}"><br><br>
+
+        <label for="dob">DOB  : </label>
+        <input type="date" name="dob" id="dob"> <br> <br>
+
+        <label for="phno">PHNO : </label>
+        <input type="text" value="+91" style="width: 20px;" readonly>
+        <input type="tel" name="Phone" id="phno" maxlength="10"><br><br>
+
+        <label for="gen">GENDER : </label>
+        <input type="radio" name="Gender" id="gen" value="male">MALE
+        <input type="radio" name="Gender" id="gen" value="female">FEMALE <br><br>
+
+        <label for="skill">SKILLS : </label>
+        <input type="checkbox" name="Skills" id="skill" value="HTML">HTML
+        <input type="checkbox" name="Skills" id="skill" >CSS
+        <input type="checkbox" name="Skills" id="skill" value="JS">JS
+        <input type="checkbox" name="Skills" id="skill" value="JAVA" disabled>JAVA
+        <input type="checkbox" name="Skills" id="skill" value="SQL" checked disabled>SQL <br><br>
+
+
+        <label for="add">ADDRESS : </label>
+        <textarea name="Address" id="add" cols="30" rows="10"></textarea>
+
+        <label for="country">COUNTRY : </label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="Itali">Itali</option>
+            <option value="America">America</option>
+            <option value="Russia">Russia</option>
+        </select> <br> <br>
+
+        <label for="com">COMPANY :</label>
+        <input type="text" name="com" id="com" value="wipro" readonly> <br> <br>
+
+        <label for="email">Email : </label>
+        <input type="email" name="mail" id="mail" autofocus> <br> <br>
+        
+
+        <a href="./Home.html"><button type="submit" >LOGIN</button>
+        <button type="reset" >RESET</button></a>
+    
+    </fieldset>
+    </form>
+</body>
+</html>
